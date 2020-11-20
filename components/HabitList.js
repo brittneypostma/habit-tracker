@@ -6,8 +6,8 @@ const HabitList = ({ habits }) => {
       <h2>My Habits</h2>
       <hr />
       <section className="habits">
-        {habits.map(habit => (
-          <Habit key={habit} habit={habit} />
+        {habits.map((habit, idx) => (
+          <Habit key={habit} habit={habit} idx={idx} />
         ))}
       </section>
       <style jsx>{`
